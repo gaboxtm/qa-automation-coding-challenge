@@ -1,4 +1,5 @@
 import { Locator, Page } from "@playwright/test";
+import { ReposResponse } from "../types/repos-response.type";
 
 export class MainPage {
     readonly page: Page

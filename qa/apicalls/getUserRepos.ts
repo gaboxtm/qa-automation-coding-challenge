@@ -1,4 +1,5 @@
 import { Page } from "@playwright/test";
+import { ReposResponse } from "../types/repos-response.type";
 
 export async function getUserRepos(page: Page, user: string): Promise<ReposResponse[]> {
     const apiReposResponse = (await page.evaluate(async (user) => {

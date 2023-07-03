@@ -1,6 +1,7 @@
 import { test, expect, chromium } from '@playwright/test';
 import { MainPage } from '../pageobjects/main';
 import { getUserRepos } from '../apicalls/getUserRepos';
+import { ReposResponse } from '../types/repos-response.type';
 
 
 test.describe('Critical Path Scenarios', () => {
